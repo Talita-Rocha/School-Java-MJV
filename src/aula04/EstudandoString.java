@@ -28,13 +28,13 @@ public class EstudandoString {
 	//PARA COLOCAR TODAS AS PALAVRAS MAIÚSCULA
 	{
 	String palavra = "talita rocha";
-	System.out.println(palavra.toUpperCase(palavra));
+	//System.out.println(palavra.toUpperCase(palavra));
 	}
 	
 	
 	//PARA COLOCAR TODAS AS PALAVRAS MINUSCULAS 
 	{
 		String palavraMin = "TALITA ROCHA";
-		System.out.println(palavra.toLowerCase(palavraMin));
+	//	System.out.println(palavra.toLowerCase(palavraMin));
 	}
 }
