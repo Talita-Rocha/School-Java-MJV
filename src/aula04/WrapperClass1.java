@@ -1,6 +1,6 @@
 package aula04;
 
-public class Aula_04_exemplo_WrapperClass {
+public class WrapperClass1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

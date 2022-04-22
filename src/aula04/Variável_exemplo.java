@@ -1,6 +1,6 @@
 package aula04;
 
-public class Aula_04_exempo_Variável {
+public class Variável_exemplo {
 
 			public static void main(String[] args) {
 			/*
@@ -25,7 +25,7 @@ public class Aula_04_exempo_Variável {
 			 */
 			final double VALOR_DE_PI = 3.14;
 			
-			VALOR_DE_PI=3.15; //Esta linha vai apresentar erro de compilação!
+		//	VALOR_DE_PI=3.15; //Esta linha vai apresentar erro de compilação!
 		}
 	}
 	
