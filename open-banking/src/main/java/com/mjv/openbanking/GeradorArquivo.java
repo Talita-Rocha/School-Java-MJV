@@ -1,34 +1,40 @@
 package com.mjv.openbanking;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDate;
 
-public class GeradorArquivo {
+/*In Java, we can use Files.write to create and write to a file.
+https://mkyong.com/java/java-how-to-create-and-write-to-a-file/
 
-	public static void main(String[] args) {
+O conteúdo deverá ser disponibilizado via arquivo chamado de AAAA-MM-DD_movimentacao.txt no 
+diretório: c:\estudos\banco_central\movimentacoes
+*/
+
+public class GeradorArquivo {
+	public void escreverDisco (String conteudoGerado) {
+		LocalDate now = LocalDate.now();
 		
-		Movimentacao mov1 = new Movimentacao ();
-		mov1.setData(LocalDate.of(2022,4,16));
-		mov1.setCpfCnpj("135.217.791-18");
-		mov1.setNomeCliente("RAIMUNDO NONATO LOUREIRO CASTELO BRANCO");
-		mov1.setValor(1275.48);
-		mov1.setTipo(TipoMovimentacao.RECEITA);
-		mov1.setEstornado(Boolean.FALSE);
+		//ASSIM:
+		String nomeArquivo = now.toString() + ".txt";
+		Path path = Paths.get("c:\\estudos\\banco_central\\movimentacoes", nomeArquivo);
+	//OU:Path path = Paths.get("c:\\estudos\\banco_central\\movimentacoes" + now.toString() + ".txt"); 
 		
-		//System.out.println(mov1);
-		
-		GeradorConteudo gc = new GeradorConteudo();
-		
-		String conteudoGerado = gc.gerar(mov1);
-		
-		System.out.println(conteudoGerado);
-		
-		/*
-		Cada linha de movimentação deverá ter a estrutura conforme ilustração seguir:
-		2022041600013521779118RAIMUNDO NONATO LOUREIRO CASTE0000127548R0
-		*/
-		
-		//CNAB400 PARA VISUALIZAR O LAYOUT PADRÃO DE UM ARQUIVO. POR EX. CAIXA ECONOMICA.
-		
+		try {
+			File diretorio = new File ("c:\\estudos\\banco_central\\movimentacoes");
+			
+			if (! diretorio.exists())
+				diretorio.mkdirs();
+			
+			Files.write(path, conteudoGerado.getBytes(StandardCharsets.UTF_8));
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
 				
 	}
 
