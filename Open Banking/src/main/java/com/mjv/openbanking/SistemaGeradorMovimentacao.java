@@ -21,8 +21,9 @@ public class SistemaGeradorMovimentacao {
 		GeradorArquivo ga = new GeradorArquivo ();
 		ga.escreverDisco(conteudoGerado);
 		
+		System.out.println(conteudoGerado);
+	}
 		
-		//System.out.println(conteudoGerado);
 		
 		/*
 		Cada linha de movimentação deverá ter a estrutura conforme ilustração seguir:
@@ -31,6 +32,6 @@ public class SistemaGeradorMovimentacao {
 		
 		//CNAB400 PARA VISUALIZAR O LAYOUT PADRÃO DE UM ARQUIVO. POR EX. CAIXA ECONOMICA.
 		
-	}
+	
 
 }
