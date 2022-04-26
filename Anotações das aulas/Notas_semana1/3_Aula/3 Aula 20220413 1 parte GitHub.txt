@@ -1,0 +1,96 @@
+MATERIAL DA AULA: https://glysns.gitbook.io/git-e-github/git-flow
+
+Continuação da explicação sobre GitHub
+
+1. Branchs conceito:
+	As branchs são capazes de criar uma réplica do mesmo arquivo, mantendo 
+assim uma integridade temporal até que haja uma necessidade de sincronização 
+(merge) das versões de um mesmo arquivo.
+
+	Branch main ( a principal) _ é a que originou o projeto;
+Permanecerá integra até que se deseje atualizar as novas alterações com outra branch, 
+utilizando-se o merge para sincronizá-la.
+
+Exemplo: Talita criou um repositório que contém um arquivo.txt _ que está na main;
+	Xpto alterou esse arquivo.txt através da sua própria branch Xpto;
+	Agora, eles estão com um conteúdo SEM sincronização;
+
+	Branch main (produção)
+	Branch desenvolvimento
+
+Sempre dar um git pull para ver houva alguma atualização_already up to date. 
+
+GITHUB DESKTOP
+Para adicionar repositório ao github; 
+Clonar um repositório remoto para local;	             
+
+2. git branch + nome da branch
+3. git branch (vai mostrar a branch criada);
+4. git branch -r (para listar as branchs origin/locais);
+    em vermelho, ainda não utililizada;
+    em verde, utililizada ao menos uma vez;
+5. git branch -a (para listar as branchs remotes/remotas);
+6. git checkout + nome da branch (para ir para a branch desejada);
+
+
+Via Github desktop 
+
+Para sincronizar_MERGE, ter o mesmo conteúdo em ambas branch, devemos utilizar:
+
+Em Current branch deve estar em main> Branch > Merge into current branch > 
+selecionar a branch que deseja sincronizar > Create a merge commit > Push origin 
+(Empurra para o repositório remoto).
+Altera localmente e sobe a atualização para o remoto.	    
+
+Para REMOVER a branch atual, que já foi sincronizada, devemos utilizar:
+Em Current branch, selecionar a branch que deseja apagar > Delete > Confirmar
+Dar "Fetch origin" para atualizar o repositório remoto.
+
+Recomendado por uma questão de boa prática, sugere-se excluir para não ficar lixo.
+
+	Branch main (produção) ATUAL 0
+	Branch desenvolvimento   Nova 1
+	Merge  Nova 1  ==> Atual 0
+	Branch main (produção) ATUAL 1 (Nova 1);
+     Deleta Branch main (produção) ATUAL 0
+
+	Branch desenvolvimento    Nova 2
+	Merge  Nova 2  ==> Atual 1
+	Branch main (produção) ATUAL 2 (Nova 2);
+     Deleta Branch main (produção) ATUAL 1
+
+	Sucessivamente... Esse procedimento para definir o tempo,
+	para subir as atualizações é feito de acordo com as sprints  (metodologia ágil).
+
+Git ignore - neste documento podemos definir que tipos de arquivos poderemos subir, 
+para não enviar um tipo de arquivo não desejado.
+
+Ex.:  	
+Todo código-fonte escrito em arquivo texto possui extensão .java
+Este arquivo é compilado com o javac gerando o arquivo .class.
+O arquivo .class não contém código de máquina nativo, e sim o bytecodes.
+
+Para fim de versionamento, o que interessa é apenas os arquivos .java. 
+Portanto, definiremos no git ignore que os arquivos que contenham .class não podem subir.
+
+ATIVIDADE:
+
+1. O dono do repositório compartilhado removerá os arquivos (tudo que fizemos);
+2. O dono devera dar um push;
+3. Cada integrante dará o comando git pull no terminal;
+	Para verificar as atualizações; Ou seja, os arquivos do grupo foram apagados;
+4. Criar, cada um, uma branch em seu nome; Criar um arquivo com seu nome, e-mail e perguntas;
+5. Na sua branch, adicionar o arquivo com suas perguntas;  
+6. Dar push;
+
+MINDSET:
+7 .  DEFINIR, antecipadamente, uma pessoa responsável por perguntar a outra ; Talita ==>> Auri
+8. Na branch da pessoa (checkout auri), fazer as alterações no arquivo dela;
+9.  Commit -m "msg" e push;
+10. Pull de novo para verificar as alterações recebidas;
+
+Após todos concluirem suas tarefas. Fazer o merge para avaliar se todos os conteúdos estão iguais. 
+
+
+
+

@@ -1,0 +1,9 @@
+MATERIAL DA AULA: https://glysns.gitbook.io/java-basico/
+
+Continuação da aula com explicação sobre JAVA Básico
+
+Java Básico;
+Java e sua história;
+Plataformas;
+Configurando o ambiente;
+Escolha sua IDE: usaremos o Eclipse no curso.

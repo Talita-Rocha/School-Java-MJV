@@ -1,0 +1,33 @@
+Descrever a aula!
+
+OUT+SHIFT+R altera uma palavra em todo lugar.
+nome de pacote é sempre minusculo
+
+https://glysns.gitbook.io/java-basico/controle-de-fluxo/conceito
+
+Controle de fluxo 
+Controle de fluxo é a habilidade de ajustar a maneira como um programa realiza suas tarefas. 
+Por meio de instruções especiais, chamadas de comandos, essas tarefas podem ser 
+executadas seletivamente, repetidamente ou excepcionalmente.
+
+Classificação: 
+* Estruturas condicionais: if-else, switch-case 
+* Estruturas de repetição: for, while, do-while
+* Estruturas de exceções: try-catch-finally, throw
+
+Para trabalhar em grupo sobre condição ternária
+
+https://www.devmedia.com.br/java-if-else-e-o-operador-ternario/38185
+
+Operador ternário
+O operador ternário é um recurso para tomada de decisões com objetivo similar ao do if/else, 
+mas que é codificado em apenas uma linha.
+
+Sintaxe do operador ternário:
+
+(expressão booleana) ? código 1 : código 2;
+Ao avaliar a expressão booleana, caso ela seja verdadeira, o código 1, declarado após o ponto de interrogação (?) 
+será executado; do contrário, o programa irá executar o código 2, declarado após os dois pontos (:).
+
+Nota: Normalmente esse operador é utilizado quando precisamos de uma estrutura de decisão simples, por exemplo, 
+para iniciar uma variável, retornar um valor ou integrar um bloco de código no qual um if/else pode torná-lo maior e menos legível.

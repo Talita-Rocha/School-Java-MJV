@@ -1,0 +1,106 @@
+Atividade em grupo:
+
+https://github.com/digytal-code/java-school/tree/main/exercicios/01%20-%20power-classes
+
+POWER CLASSES
+O nosso desafio é explorar as principais classes da linguagem Java.
+
+Requisitos:
+
+Realizar uma breve descrição da classe em questão;
+
+Apresentar alternativas de instanciação de objetos com construtor ou metódos instance ;
+
+Apresentar no mínimo 04 métodos mais utilizados destacando o seu contrato (tipo retorno + nome + parâmetros);
+
+Apresentar se alguns dos métodos é sobrecarregado;
+
+Realizar uma demonstração adaptando o uso dos métodos (mínimo 04) em situações do cotidiando (use a imaginação);
+
+Dicas:
+
+> Use a documentação oficial da Oracle + outras referências e exemplos na internet;
+
+> Atuar em conjunto para resolver o item 1 de requisitos e depois tentar distribuir entre os integrantes do grupo;
+
+> Testes, testes e mais testes, pensem previamente no resultado e validem no console;
+
+> O Grupo 04 poderá/deverá interagir com os demais grupos;
+
+> A apresentação será realizada em 10 minutos;
+
+> Definam antecipadamente a ordem dos apresentadores;
+
+> Usem o próprio README.md com os recursos de Markdown;
+
+> Preferencialmente subam o conteúdo (apresentação + exemplos) no repositório da School.
+
+Classes por Grupo
+
+Grupo 01
+	java.lang.String
+	java.util.StringJoiner
+	java.lang.StringBuilder
+
+Grupo 02 (nosso grupo)
+	
+https://www.devmedia.com.br/classes-wrapper-explorando-as-classes-que-empacotam-os-tipos-primitivos/24136
+Descrição do que são classes Wrappers
+
+Há uma classe wrapper correspondente a cada tipo primitivo em Java. Uma classe empacotadora encapsula um único valor de um tipo de dado primitivo. 
+Por exemplo, a classe Integer deve tratar um valor int.
+
+Uma outra situação em que as classes wrapper são úteis é quando precisamos converter um objeto em um tipo de dado primitivo. 
+Por exemplo, digamos que em nossa aplicação, uma interface gráfica do usuário solicite que seja digitada a idade de uma pessoa em uma caixa de texto JTextField. 
+Contudo, sabemos que caixas de textos retornam seu conteúdo em uma String, o que requer uma conversão para int de maneira que possamos realizar cálculos 
+com a idade na aplicação.
+
+Pacote java.lang
+Fornece classes que são fundamentais para o design da linguagem de programação Java.
+Veja:  Descrição
+https://docs.oracle.com/javase/8/docs/api/java/lang/package-summary.html
+	
+	https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
+	java.lang.Integer - A Integerclasse envolve um valor do tipo primitivo intem um objeto.
+
+public final class Integer 
+extends Number 
+implementa Comparable < Integer >
+A Integerclasse envolve um valor do tipo primitivo intem um objeto. Um objeto do tipo Integer contém um único campo cujo tipo é int.
+Além disso, essa classe fornece vários métodos para converter an intpara a Stringe a Stringpara an int, bem como outras constantes e métodos úteis ao lidar com um int.
+
+	https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html	
+	java.lang.Double  - A Doubleclasse envolve um valor do tipo primitivo doubleem um objeto.
+
+public final class Double 
+estende Number 
+implementa Comparable < Double >
+A Doubleclasse envolve um valor do tipo primitivo doubleem um objeto. Um objeto do tipo Doublecontém um único campo cujo tipo é double.
+Além disso, essa classe fornece vários métodos para converter a doubleem a Stringe a Stringem a double, bem como outras constantes e métodos úteis ao lidar com a double.
+
+
+
+
+Grupo 03
+java.util.Calendar
+java.time.LocalDate
+java.time.LocalDateTime
+
+Grupo 04
+java.lang.String.format()
+java.time.format.DateTimeFormatter
+java.text.DecimalFormat
+
+Grupo 05
+java.io.File
+java.nio.file.Path
+java.nio.file.Paths
+
+05 - Links
+Dev Dojo
+
+Grupo 06
+java.lang.Object
+java.lang.Math
+java.math.BigDecimal
+

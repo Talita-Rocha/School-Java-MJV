@@ -1,0 +1,89 @@
+1 Aula 11/04/2022
+
+Fizemos apresentação da turma;
+
+Conhecemos o git e o github https://glysns.gitbook.io/git-e-github/
+
+	"Enquanto que o Git é um ecossistema de conjunto de comandos para transferências de dados, 
+	Github é uma das plataformas de armazenamento no mercado."
+
+Git Correios
+Para uma melhor compreensão vamos aprimorar os conceitos citados acima representando a nossa proposta de gestão de arquivos como um simples envio de cartas pelos correios.
+Imagine que você pretenda enviar um kit de presentes para um amigo muito especial contendo 1 agenda, 1 caneta, 1 caneca customizada e 1 camisa descolada. Estes são os seus arquivos.
+Agora você separou uma caixa de embalagem (stage) da hora onde irá incluir (add) os itens de presente.
+Depois de selecionados, você irá lacrar (commit) a embalagem e informar os dados (message) do destinatário.
+Como você mora em um condomínio, costuma-se deixar as encomendas (commits) na portaria (repositório local) para que haja a coleta (push) de todas as correspondências. 
+E quem vai retirar as correspondências ? Ai é o papel dos Serviços de Hospedagem de projetos controlados.
+Git Hub, GitLab, Bitbucket; 
+
+Fizemos a dinâmica:
+
+1. Pesquise sobre um serviço citado acima. https://glysns.gitbook.io/git-e-github/git-hub
+
+	Em suma, o GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. 
+	Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um 	
+	registro detalhado do seu progresso.
+
+2. Apresente curiosidades positivas e ou negativas
+3. Apresente os proprietários e a interação com a comunidade
+4. Quais os outros serviços oferecidos por estas platafomas
+5. Disponibilize todas as referências (links)
+6. Elabore 1 questão para um dos demais serviços listados acima
+
+Instalação GitHub (já tinha instalado antes)
+Aprendemos comandos básicos: https://glysns.gitbook.io/git-e-github/git
+https://www.hostinger.com.br/tutoriais/comandos-basicos-de-git?ppc_campaign=google_performance_max&gclid=EAIaIQobChMI5K-LzeDD9AIVwsDICh24PgqtEAAYASAAEgIJM_D_BwE
+
+git init: 	Este comando é usado para criar um novo repositório GIT;
+
+git add .: 	O comando git add pode ser usado para adicionar arquivos ao índice;
+
+git commit -m: O comando git commit é usado para confirmar as alterações na cabeça. 
+	       Tenha em atenção que quaisquer alterações efetuadas não irão para o repositório remoto. 
+	       git commit –m “coloque sua mensagem aqui”;
+
+git push: 	git push é outro dos comandos git básicos mais usados. Um simples envio envia as alterações 
+	  	feitas para o ramo mestre do repositório remoto associado ao diretório de trabalho. Por exemplo:
+	  	git push origin master
+
+git status: 	O comando git status exibe a lista de arquivos alterados juntamente com os arquivos que 
+	    	ainda não foram adicionados ou confirmados.
+
+git clone: 	O comando git clone é usado para fins de verificação de repositório. 
+		Se o repositório estiver em um servidor remoto, use:
+	   	git clone alex@93.188.160.58:/path/to/repository;
+
+git checkout: 	O comando git checkout pode ser usado para criar ramos ou alternar entre eles. 
+		Por exemplo, o seguinte cria um novo ramo e muda para ele:
+		command git checkout -b <branch-name>
+		Para simplesmente mudar de um ramo para outro, use:
+		git checkout <branch-name>;
+
+git remote: 	O comando git remote permite que um usuário se conecte a um repositório remoto. 
+		O comando a seguir lista os repositórios remotos atualmente configurados:
+		git remote –v
+		Esse comando permite que o usuário se conecte a um servidor remoto:
+		git remote add origin <93.188.160.58>;
+
+git branch: 	O comando git branch pode ser usado para listar, criar ou excluir ramos. 
+		Para listar todos os ramos presentes no repositório, use:
+		git branch
+		Para excluir um ramo:
+		git branch –d <branch-name>;
+
+git pull: 	Para mesclar todas as alterações presentes no repositório remoto para o diretório 
+	  	de trabalho local, o comando pull é usado. 
+
+git merge: 	O comando git merge é usado para mesclar uma ramificação no ramo ativo. Use:
+		git merge <branch-name>
+
+git reset: 	Para redefinir o índice e o diretório de trabalho para o estado do último commit, 
+		o comando git reset é usado. Uso:
+		git reset --hard HEAD
+
+Criar um repositório remoto. https://glysns.gitbook.io/git-e-github/git-hub;
+
+		git remote add origin https://github.com/Talita-Rocha/mjv-java-school.git
+		git branch -M main
+		git push -u origin main
+
