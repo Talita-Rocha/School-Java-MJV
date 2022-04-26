@@ -1,4 +1,4 @@
-package com.mjv.notification;
+package com.mjv.basenotification;
 
 public enum InstalacaoServico {
 	AGUA ("A"),

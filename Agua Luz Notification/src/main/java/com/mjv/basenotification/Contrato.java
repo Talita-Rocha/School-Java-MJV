@@ -1,12 +1,13 @@
-package com.mjv.notification;
+package com.mjv.basenotification;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Contrato {
 
 	private Integer protocoloContrato;
 	private LocalDate data;
-	private LocalDate hora;
+	private LocalTime hora;
 	private Double taxaValor; 
 	private InstalacaoServico siglaServ;
 	private TipoNotificacao tipoNotificacao;
@@ -24,10 +25,10 @@ public class Contrato {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
-	public LocalDate getHora() {
+	public LocalTime getHora() {
 		return hora;
 	}
-	public void setHora(LocalDate hora) {
+	public void setHora(LocalTime hora) {
 		this.hora = hora;
 	}
 	public Double getTaxaValor() {

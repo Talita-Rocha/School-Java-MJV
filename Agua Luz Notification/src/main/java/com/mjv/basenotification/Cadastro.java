@@ -1,4 +1,4 @@
-package com.mjv.notification;
+package com.mjv.basenotification;
 
 public class Cadastro {
 
