@@ -9,7 +9,7 @@ public class Contrato {
 	private LocalDate data;
 	private LocalTime hora;
 	private Double taxaValor; 
-	private InstalacaoServico siglaServ;
+	private TipoServico siglaServ;
 	private TipoNotificacao tipoNotificacao;
 	
 	
@@ -37,10 +37,10 @@ public class Contrato {
 	public void setTaxaValor(Double taxaValor) {
 		this.taxaValor = taxaValor;
 	}
-	public InstalacaoServico getSiglaServ() {
+	public TipoServico getSiglaServ() {
 		return siglaServ;
 	}
-	public void setSiglaServ(InstalacaoServico siglaServ) {
+	public void setSiglaServ(TipoServico siglaServ) {
 		this.siglaServ = siglaServ;
 	}
 	public TipoNotificacao getTipoNotificacao() {

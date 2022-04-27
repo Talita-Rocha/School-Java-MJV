@@ -6,8 +6,8 @@ import java.time.LocalTime;
 import com.mjv.basenotification.Cadastro;
 import com.mjv.basenotification.Residencia;
 import com.mjv.basenotification.Contrato;
-import com.mjv.basenotification.InstalacaoServico;
 import com.mjv.basenotification.TipoNotificacao;
+import com.mjv.basenotification.TipoServico;
 
 public class Notificacao {
 
@@ -16,9 +16,9 @@ public class Notificacao {
 	private Integer protocoloContrato;
 	private LocalDate data;
 	private LocalTime hora;
-	private InstalacaoServico siglaServ;
+	private TipoServico tipoServico;
 	private Double taxaValor; 
-	private TipoNotificacao tipoNotificacao;
+	
 	private String logradouro;
 	private Integer numero;
 	private String complemento;
@@ -58,23 +58,17 @@ public class Notificacao {
 	public void setHora(LocalTime hora) {
 		this.hora = hora;
 	}
-	public InstalacaoServico getSiglaServ() {
-		return siglaServ;
+	public TipoServico getTipoServico() {
+		return tipoServico;
 	}
-	public void setSiglaServ(InstalacaoServico siglaServ) {
-		this.siglaServ = siglaServ;
+	public void setTipoServico(TipoServico tipoServico) {
+		this.tipoServico = tipoServico;
 	}
 	public Double getTaxaValor() {
 		return taxaValor;
 	}
 	public void setTaxaValor(Double taxaValor) {
 		this.taxaValor = taxaValor;
-	}
-	public TipoNotificacao getTipoNotificacao() {
-		return tipoNotificacao;
-	}
-	public void setTipoNotificacao(TipoNotificacao tipoNotificacao) {
-		this.tipoNotificacao = tipoNotificacao;
 	}
 	public String getLogradouro() {
 		return logradouro;
@@ -122,11 +116,13 @@ public class Notificacao {
 	@Override
 	public String toString() {
 		return "Notificacao [nomeCliente=" + nomeCliente + ", cpf=" + cpf + ", protocoloContrato=" + protocoloContrato
-				+ ", data=" + data + ", hora=" + hora + ", taxaValor=" + taxaValor + ", logradouro=" + logradouro
-				+ ", numero=" + numero + ", complemento=" + complemento + ", bairro=" + bairro + ", cidade=" + cidade
-				+ ", uf=" + uf + ", cep=" + cep + "]";
+				+ ", data=" + data + ", hora=" + hora + ", tipoServico=" + tipoServico + ", taxaValor=" + taxaValor
+				+ ", logradouro=" + logradouro + ", numero=" + numero + " , complemento=" + complemento + ", bairro="
+				+ bairro + ", cidade=" + cidade + ", uf=" + uf + ", cep=" + cep + "]";
 	}
 	
 }
+	
+
 	
 

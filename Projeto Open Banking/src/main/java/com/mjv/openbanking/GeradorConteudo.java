@@ -50,20 +50,17 @@ public class GeradorConteudo {
 		REMOVER CARACTERES ESPECIAIS NO JAVA;
 		
 		sb.append(movimentacao.getData().toString().replace("-", ""));
-		
 		sb.append(movimentacao.getCpfCnpj());
-		
-	  //sb.append(movimentacao.getCpfCnpj().replaceAll("\\D", ""));
-	  //sb.append(movimentacao.getCpfCnpj().replaceAll("[\\.\\-]", "")); \\ CHAMA-SE SCAPE
-	  //sb.append(movimentacao.getCpfCnpj().replaceAll("[^a-zA-Z0-9]", "")); REGEX
-		
+		sb.append(movimentacao.getCpfCnpj().replaceAll("\\D", ""));
+	  	sb.append(movimentacao.getCpfCnpj().replaceAll("[\\.\\-]", "")); \\ CHAMA-SE SCAPE
+	  	sb.append(movimentacao.getCpfCnpj().replaceAll("[^a-zA-Z0-9]", "")); REGEX
 		sb.append(movimentacao.getNomeCliente());
 		sb.append(movimentacao.getValor());
 		sb.append(movimentacao.getTipo());				
 		sb.append(movimentacao.getEstornado());
 		*/
 		
-			
+		
 		
 	}
 

@@ -22,7 +22,7 @@ public class GeradorArquivo {
 		//ASSIM:
 		String nomeArquivo = now.toString() + ".txt";
 		Path path = Paths.get("c:\\estudos\\banco_central\\movimentacoes", nomeArquivo);
-	//OU:Path path = Paths.get("c:\\estudos\\banco_central\\movimentacoes" + now.toString() + ".txt"); 
+		//OU:Path path = Paths.get("c:\\estudos\\banco_central\\movimentacoes" + now.toString() + ".txt"); 
 		
 		try {
 			File diretorio = new File ("c:\\estudos\\banco_central\\movimentacoes");

@@ -3,45 +3,44 @@ package criarnotificacao;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import com.mjv.basenotification.InstalacaoServico;
+import com.mjv.basenotification.TipoServico;
 
 public class SistemaGeradorNotificacao {
 
 	public static void main(String[] args) 
 	
 	{
-		Notificacao not1 = new Notificacao ();
-			not1.setNomeCliente("RAIMUNDO NONATO LOUREIRO CASTELO BRANCO");
-			not1.setCpf("007.324.223.21");
-			not1.setProtocoloContrato(1984365);
-			not1.setData(LocalDate.of(2022,05,07));
-			not1.setHora(LocalTime.of(15,21));
-			not1.setSiglaServ(InstalacaoServico.AGUA);
-			not1.setTaxaValor(127.33);
-			not1.setLogradouro("Rua Sebastião Firmino");
-			not1.setNumero(243);
-			not1.setComplemento("AP 210 BL CENTAURO");
-			not1.setBairro("São Sebastião");
-			not1.setCidade("São Raimundo Nonato");
-			not1.setUf("SP");
-			not1.setCep("07.210.715");
+		Notificacao not01 = new Notificacao ();
+			
+			not01.setNomeCliente("RAIMUNDO NONATO LOUREIRO CASTELO BRANCO");
+			not01.setCpf("007.324.223.21");
+			not01.setProtocoloContrato(1984365);
+			not01.setData(LocalDate.of(2022,05,07));
+			not01.setHora(LocalTime.of(15,21));
+			not01.setTipoServico(TipoServico.AGUA); 
+			not01.setTaxaValor(127.33);
+			not01.setLogradouro("Rua Sebastião Firmino");
+			not01.setNumero(243);
+			not01.setComplemento("AP 210 BL CENTAURO");
+			not01.setBairro("São Sebastião");
+			not01.setCidade("São Raimundo Nonato");
+			not01.setUf("SP");
+			not01.setCep("07.210.715");
 	
+			GeradorConteudoNot gcn = new GeradorConteudoNot ();
+			String conteudoGeradoNot = gcn.gerar(not01);
+			
+			GeradorArquivoNot gan = new GeradorArquivoNot ();
+			gan.escreverDiscoNot(conteudoGeradoNot);
+			
+			System.out.println(conteudoGeradoNot);
 	}
 }
 	
-	/*
-	{
-			GeradorConteudoCad gcc = new GeradorConteudoCad();
-			String conteudoGeradoCad = gcc.gerar(cad1);
-			
-			//GeradorConteudo gc = new GeradorConteudo();
-			//String conteudoGerado = gc.gerar(mov1);
-			
-			//GeradorArquivo ga = new GeradorArquivo ();
-			//ga.escreverDisco(conteudoGerado);
-	}
-	*/
-				
+/*
+Cada linha de notificação deverá ter a estrutura conforme ilustração seguir:
+2022041600013521779118RAIMUNDO NONATO LOUREIRO CASTE0000127548R0
+*/
 
 
 /* O aplicativo deverá enviar a seguinte mensagem:

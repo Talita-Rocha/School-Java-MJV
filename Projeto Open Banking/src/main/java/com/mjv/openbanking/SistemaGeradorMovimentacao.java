@@ -13,7 +13,7 @@ public class SistemaGeradorMovimentacao {
 		mov1.setValor(1275.48);
 		mov1.setTipo(TipoMovimentacao.RECEITA);
 		mov1.setEstornado(Boolean.FALSE);
-		
+	
 				
 		GeradorConteudo gc = new GeradorConteudo();
 		String conteudoGerado = gc.gerar(mov1);
