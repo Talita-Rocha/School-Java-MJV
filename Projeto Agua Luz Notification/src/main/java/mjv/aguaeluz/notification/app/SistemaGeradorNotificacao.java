@@ -1,9 +1,11 @@
-package criarnotificacao;
+package mjv.aguaeluz.notification.app;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import com.mjv.basenotification.TipoServico;
+import mjv.aguaeluz.notification.model.TipoServico;
+import mjv.aguaeluz.notification.service.GeradorArquivoNot;
+import mjv.aguaeluz.notification.util.GeradorConteudoNot;
 
 public class SistemaGeradorNotificacao {
 
@@ -19,11 +21,11 @@ public class SistemaGeradorNotificacao {
 			not01.setHora(LocalTime.of(15,21));
 			not01.setTipoServico(TipoServico.AGUA); 
 			not01.setTaxaValor(127.33);
-			not01.setLogradouro("Rua Sebastião Firmino");
+			not01.setLogradouro("Rua Sebastiï¿½o Firmino");
 			not01.setNumero(243);
 			not01.setComplemento("AP 210 BL CENTAURO");
-			not01.setBairro("São Sebastião");
-			not01.setCidade("São Raimundo Nonato");
+			not01.setBairro("Sï¿½o Sebastiï¿½o");
+			not01.setCidade("Sï¿½o Raimundo Nonato");
 			not01.setUf("SP");
 			not01.setCep("07.210.715");
 	
@@ -38,22 +40,22 @@ public class SistemaGeradorNotificacao {
 }
 	
 /*
-Cada linha de notificação deverá ter a estrutura conforme ilustração seguir:
+Cada linha de notificaï¿½ï¿½o deverï¿½ ter a estrutura conforme ilustraï¿½ï¿½o seguir:
 2022041600013521779118RAIMUNDO NONATO LOUREIRO CASTE0000127548R0
 */
 
 
-/* O aplicativo deverá enviar a seguinte mensagem:
+/* O aplicativo deverï¿½ enviar a seguinte mensagem:
  * 
- * "Senhor(a)" Gleyson Sampaio "cpf de número" 234.765.987-27 ",  
- * Informamos que conforme contrato com protocolo de número" (2022025687) 
- * "está agendado para a data\hora" (21/02/2022) + (16:00)h "a instalação do serviço 
- * de Água com taxa de valor R$ " (127,33) "em sua residência localizada no endereço abaixo:"
+ * "Senhor(a)" Gleyson Sampaio "cpf de nï¿½mero" 234.765.987-27 ",  
+ * Informamos que conforme contrato com protocolo de nï¿½mero" (2022025687) 
+ * "estï¿½ agendado para a data\hora" (21/02/2022) + (16:00)h "a instalaï¿½ï¿½o do serviï¿½o 
+ * de ï¿½gua com taxa de valor R$ " (127,33) "em sua residï¿½ncia localizada no endereï¿½o abaixo:"
 
 	o* \n "Logradouro: " Rua das Marias, 243
 	o* \n "Complemento: " Ap 207, Bloco C
 	o* \n "Bairro: " Santo Antonio
-	o* \n "Cidade: " São Paulo / SP
+	o* \n "Cidade: " Sï¿½o Paulo / SP
 	o* \n "Cep: " 27.310-657
 	
  * 

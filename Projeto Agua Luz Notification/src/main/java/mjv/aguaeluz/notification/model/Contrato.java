@@ -1,4 +1,4 @@
-package com.mjv.basenotification;
+package mjv.aguaeluz.notification.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

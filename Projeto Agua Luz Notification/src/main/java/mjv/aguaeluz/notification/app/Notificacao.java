@@ -1,13 +1,9 @@
-package criarnotificacao;
+package mjv.aguaeluz.notification.app;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import com.mjv.basenotification.Cadastro;
-import com.mjv.basenotification.Residencia;
-import com.mjv.basenotification.Contrato;
-import com.mjv.basenotification.TipoNotificacao;
-import com.mjv.basenotification.TipoServico;
+import mjv.aguaeluz.notification.model.TipoServico;
 
 public class Notificacao {
 

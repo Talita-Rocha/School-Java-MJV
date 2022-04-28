@@ -1,4 +1,6 @@
-package criarnotificacao;
+package mjv.aguaeluz.notification.util;
+
+import mjv.aguaeluz.notification.app.Notificacao;
 
 public class GeradorConteudoNot {
 
@@ -52,14 +54,14 @@ public class GeradorConteudoNot {
 }
 
 /*
-	PARA AMANHÃ: CONTINUAR IMPLEMENTANDO O MODELO ABAIXO:
+	PARA AMANHï¿½: CONTINUAR IMPLEMENTANDO O MODELO ABAIXO:
  
  StringBuilder mensagem = new StringBuilder();
 		
-		mensagem.append("Senhor (a) " + nome + " cpf de número " + cpf + ", Informamos que conforme contrato com "
-				+ "protocolo de número " + protocolo + " está \n agendado para a data\\hora " + data + " " 
-				+ hora.substring(0, 2)+":"+hora.substring(2, 4) +"h, instalação do serviço de " + servico + " com taxa de valor " + valor + " em "
-						+ "sua residência localizada no \n endereço abaixo:\n\n"
+		mensagem.append("Senhor (a) " + nome + " cpf de nï¿½mero " + cpf + ", Informamos que conforme contrato com "
+				+ "protocolo de nï¿½mero " + protocolo + " estï¿½ \n agendado para a data\\hora " + data + " " 
+				+ hora.substring(0, 2)+":"+hora.substring(2, 4) +"h, instalaï¿½ï¿½o do serviï¿½o de " + servico + " com taxa de valor " + valor + " em "
+						+ "sua residï¿½ncia localizada no \n endereï¿½o abaixo:\n\n"
 				
 						+ "	Logradouro: " + logradouro + ", " + num + "\n"
 						+ "	Complemento: " + complemento + "\n"
