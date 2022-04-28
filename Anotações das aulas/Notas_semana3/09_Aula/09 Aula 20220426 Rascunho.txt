@@ -1,1 +1,3 @@
-Descrever a aula!
+https://glysns.gitbook.io/java-basico/sintaxe/operadores
+
+Operadores
