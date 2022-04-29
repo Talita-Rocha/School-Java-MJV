@@ -8,6 +8,7 @@ public class Endereco {
 	private String cidade;
 	private String estado;
 	private String cep;
+	
 	public String getLogradouro() {
 		return logradouro;
 	}

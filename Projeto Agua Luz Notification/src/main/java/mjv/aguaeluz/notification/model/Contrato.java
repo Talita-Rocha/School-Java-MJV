@@ -1,53 +1,65 @@
 package mjv.aguaeluz.notification.model;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 
 public class Contrato {
 
-	private Integer protocoloContrato;
-	private LocalDate data;
-	private LocalTime hora;
-	private Double taxaValor; 
-	private TipoServico siglaServ;
-	private TipoNotificacao tipoNotificacao;
+	private Long numeroProtocolo;
+	private LocalDateTime dataHora;
+	private Cadastro cliente;
+	private TipoServico descricaoServico;
+	private TipoServico valorServico;
+	private TipoServico siglaServico;
+	private TipoNotificacao descricaoNotificacao;
+	private TipoNotificacao siglaNotificacao;
 	
-	
-	public Integer getProtocoloContrato() {
-		return protocoloContrato;
+	public Long getNumeroProtocolo() {
+		return numeroProtocolo;
 	}
-	public void setProtocoloContrato(Integer protocoloContrato) {
-		this.protocoloContrato = protocoloContrato;
+	public void setNumeroProtocolo(Long numeroProtocolo) {
+		this.numeroProtocolo = numeroProtocolo;
 	}
-	public LocalDate getData() {
-		return data;
+	public LocalDateTime getDataHora() {
+		return dataHora;
 	}
-	public void setData(LocalDate data) {
-		this.data = data;
+	public void setDataHora(LocalDateTime dataHora) {
+		this.dataHora = dataHora;
 	}
-	public LocalTime getHora() {
-		return hora;
+	public Cadastro getCliente() {
+		return cliente;
 	}
-	public void setHora(LocalTime hora) {
-		this.hora = hora;
+	public void setCliente(Cadastro cliente) {
+		this.cliente = cliente;
 	}
-	public Double getTaxaValor() {
-		return taxaValor;
+	public TipoServico getDescricaoServico() {
+		return descricaoServico;
 	}
-	public void setTaxaValor(Double taxaValor) {
-		this.taxaValor = taxaValor;
+	public void setDescricaoServico(TipoServico descricaoServico) {
+		this.descricaoServico = descricaoServico;
 	}
-	public TipoServico getSiglaServ() {
-		return siglaServ;
+	public TipoServico getValorServico() {
+		return valorServico;
 	}
-	public void setSiglaServ(TipoServico siglaServ) {
-		this.siglaServ = siglaServ;
+	public void setValorServico(TipoServico valorServico) {
+		this.valorServico = valorServico;
 	}
-	public TipoNotificacao getTipoNotificacao() {
-		return tipoNotificacao;
+	public TipoServico getSiglaServico() {
+		return siglaServico;
 	}
-	public void setTipoNotificacao(TipoNotificacao tipoNotificacao) {
-		this.tipoNotificacao = tipoNotificacao;
+	public void setSiglaServico(TipoServico siglaServico) {
+		this.siglaServico = siglaServico;
 	}
-	
+	public TipoNotificacao getDescricaoNotificacao() {
+		return descricaoNotificacao;
+	}
+	public void setDescricaoNotificacao(TipoNotificacao descricaoNotificacao) {
+		this.descricaoNotificacao = descricaoNotificacao;
+	}
+	public TipoNotificacao getSiglaNotificacao() {
+		return siglaNotificacao;
+	}
+	public void setSiglaNotificacao(TipoNotificacao siglaNotificacao) {
+		this.siglaNotificacao = siglaNotificacao;
+	}
+			
 }

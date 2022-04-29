@@ -8,6 +8,7 @@ public class Contrato {
 	private Double valor;
 	private LocalDateTime dataHora;
 	private Cadastro cliente;
+	
 	public Long getNumeroProtocolo() {
 		return numeroProtocolo;
 	}

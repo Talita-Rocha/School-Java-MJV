@@ -1,20 +1,22 @@
 package mjv.aguaeluz.notification.model;
 
 public enum TipoNotificacao {
-	SMS ("S"),
-	WHATSAPP ("W");
+	SMS ( "SMS", "S"),
+	WHATSAPP ("Whastapp","W");
 
-	private String tipoNotificacao;
+	private String descricaoNotificacao;
+	private String siglaNotificacao;
 	
-	private TipoNotificacao(String tipoNotificacao) {
-		this.tipoNotificacao = tipoNotificacao;
+	private TipoNotificacao (String descricaoNotificacao, String siglaNotificacao) {
+		this.descricaoNotificacao = descricaoNotificacao;
+		this.siglaNotificacao = siglaNotificacao;
 	}
 
-	public String getTipoNotificacao () {
-		return tipoNotificacao;
+	public String getDescricaoNotificacao () {
+		return descricaoNotificacao;
 	}
-
-
-
+	public String getSiglaNotificacao() {
+		return siglaNotificacao;
+	}
 
 }

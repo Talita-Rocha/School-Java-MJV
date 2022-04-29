@@ -1,4 +1,4 @@
-package mjv.aguaeluz.notification.service;
+package mjv.aguaeluz.notification.util;
 
 import java.io.File;
 import java.io.IOException;

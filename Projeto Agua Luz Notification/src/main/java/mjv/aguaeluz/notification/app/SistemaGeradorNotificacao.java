@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 import mjv.aguaeluz.notification.model.TipoServico;
-import mjv.aguaeluz.notification.service.GeradorArquivoNot;
+import mjv.aguaeluz.notification.util.GeradorArquivoNot;
 import mjv.aguaeluz.notification.util.GeradorConteudoNot;
 
 public class SistemaGeradorNotificacao {

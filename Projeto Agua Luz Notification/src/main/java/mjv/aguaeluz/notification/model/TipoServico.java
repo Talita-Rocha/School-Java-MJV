@@ -1,26 +1,30 @@
 package mjv.aguaeluz.notification.model;
 
 public enum TipoServico {
-	AGUA ("A"),
-	LUZ ("L");
+	AGUA ( "Água", 127.33, "A"),
+	LUZ ( "Energia", 132.15, "L");
 		
- 	private String tipoServico;
+ 	private String descricaoServico;
+ 	private Double valorServico;
  	private String siglaServico;
  	
- 	public String getTipoServico() {
-		return tipoServico;
+ 	private TipoServico(String descricaoServico, Double valorServico, String siglaServico) {
+ 		this.descricaoServico = descricaoServico;
+ 		this.valorServico = valorServico;
+ 		this.siglaServico = siglaServico;
+ 			
+ 	}
+ 	// PQ NÃO ENTROU O SET MESMO????
+ 	
+ 	public String getDescricaoServico() {
+		return descricaoServico;
 	}
-
-	public void setTipoServico(String tipoServico) {
-		this.tipoServico = tipoServico;
-	}
-	
-	private TipoServico (String siglaServ) {
-		this.siglaServico = siglaServ;
-	}
-	
-	public String getSiglaServ () {
+ 	public Double getValorServico() {
+ 		return valorServico;
+ 	}
+ 	public String getSiglaServico() {
 		return siglaServico;
 	}
-	
+
 }
+

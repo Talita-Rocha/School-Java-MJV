@@ -4,9 +4,9 @@ public class Cadastro {
 
 	private String cpf;
 	private String rg;
-	private String nomeCliente;
+	private String nome;
 	private String celular;
-	
+	private Endereco endereco;
 	
 	public String getCpf() {
 		return cpf;
@@ -20,11 +20,11 @@ public class Cadastro {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-	public String getNomeCliente() {
-		return nomeCliente;
+	public String getNome() {
+		return nome;
 	}
-	public void setNomeCliente(String nomeCliente) {
-		this.nomeCliente = nomeCliente;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public String getCelular() {
 		return celular;
@@ -32,8 +32,12 @@ public class Cadastro {
 	public void setCelular(String celular) {
 		this.celular = celular;
 	}
-		
-	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 
 }
 	

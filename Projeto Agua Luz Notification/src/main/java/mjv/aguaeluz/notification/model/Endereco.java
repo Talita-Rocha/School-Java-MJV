@@ -1,13 +1,13 @@
 package mjv.aguaeluz.notification.model;
 
-public class Residencia {
+public class Endereco {
 
 	private String logradouro;
-	private Integer numero;
+	private String numero;
 	private String complemento;
 	private String bairro;
 	private String cidade;
-	private String uf;
+	private String estado;
 	private String cep;
 	private Pais siglaPais;
 	
@@ -18,10 +18,10 @@ public class Residencia {
 	public void setLogradouro(String logradouro) {
 		this.logradouro = logradouro;
 	}
-	public Integer getNumero() {
+	public String getNumero() {
 		return numero;
 	}
-	public void setNumero(Integer numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 	public String getComplemento() {
@@ -42,11 +42,11 @@ public class Residencia {
 	public void setCidade(String cidade) {
 		this.cidade = cidade;
 	}
-	public String getUf() {
-		return uf;
+	public String getEstado() {
+		return estado;
 	}
-	public void setUf(String uf) {
-		this.uf = uf;
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 	public String getCep() {
 		return cep;

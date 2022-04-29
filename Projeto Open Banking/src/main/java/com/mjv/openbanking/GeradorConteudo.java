@@ -22,7 +22,7 @@ public class GeradorConteudo {
 		Long cpfLong = Long.valueOf (cpf);
 		String cpfFormatado = String.format("%014d", cpfLong);
 		sb.append (cpfFormatado);
-		//APPEND RETORNA A PRÓRPRIA CLASSE;
+		//APPEND RETORNA A PRÓPRIA CLASSE;
 		
 		String nome = movimentacao.getNomeCliente();
 		
