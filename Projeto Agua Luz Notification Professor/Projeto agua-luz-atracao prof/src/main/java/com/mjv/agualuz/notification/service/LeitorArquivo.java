@@ -17,10 +17,12 @@ public class LeitorArquivo {
 		for(String linha : conteudo) {
 			Contrato c = new Contrato();
 			Cadastro cad = new Cadastro();
-			cad.setCpf(linha.substring(0,11).trim());
+		
+			cad.setCpf(linha.substring(0,11).trim()); //TRIM RETIRA OS ESPAÇOS EM BRANCO NOS DADOS
 			cad.setRg(linha.substring(11,21).trim());
 			cad.setNome(linha.substring(21,51).trim());
 			
+			///CONTINUAR A FAZER!!!
 			c.setCliente(cad);
 			
 			contratos.add(c);
@@ -31,16 +33,19 @@ public class LeitorArquivo {
 	public List<Contrato> lerContratosCsv(){
 		List<String> conteudo = ler("agua-luz-contratos.csv");
 		List<Contrato> contratos = new ArrayList<Contrato>();
+		
 		for(String linha : conteudo) {
 			String[] campos = linha.split(";");
 			
 			Contrato c = new Contrato();
-			c.setNumeroProtocolo(Long.valueOf(campos[1]));
+			c.setNumeroProtocolo(Long.valueOf(campos[1])); //ALTERAR AQUI A POSIÇÃO DO PROTOCOLO
+			
 			Cadastro cad = new Cadastro();
 			cad.setCpf(campos[0]);
 			cad.setNome(campos[2]);
 			c.setCliente(cad);
 			
+			// CONTINUAR A FAZER!!!
 			contratos.add(c);
 			
 		}

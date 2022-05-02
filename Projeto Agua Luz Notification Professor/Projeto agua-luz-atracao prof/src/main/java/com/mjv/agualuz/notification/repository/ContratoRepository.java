@@ -12,7 +12,9 @@ import com.mjv.agualuz.notification.model.Servico;
 
 public class ContratoRepository {
 	//banco de dados fake
+	
 	private List<Contrato> contratos = new ArrayList<Contrato>();
+	// A VARIÁVEL "CONSTRATOS" NO PLURAL SIGNIFICA QUE HÁ MAIS DE UM OBJETO. OU SEJ, UMA COLEÇÃO
 	
 	public List<Contrato> listar() {
 		Contrato contrato = new Contrato();
@@ -41,8 +43,9 @@ public class ContratoRepository {
 		endereco.setComplemento("Bloco C");
 
 		contratos.add(contrato);
-		return contratos;
+		return contratos; //PODE HAVER MAIS DE UM CONTRATO 
 	}
 	
-	
+	//CRIAR UM CONTRATO: PARA NOMES COM MENOS DE 30 CARACTERES
+	//CRIAR E UM OUTRO: PARA NOMES COM MAIS DE 30 CARACTERES
 }

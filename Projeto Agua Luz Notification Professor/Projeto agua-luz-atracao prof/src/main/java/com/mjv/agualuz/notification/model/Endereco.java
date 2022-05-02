@@ -8,6 +8,7 @@ public class Endereco {
 	private String cidade;
 	private String estado;
 	private String cep;
+	private Pais pais;
 	
 	public String getLogradouro() {
 		return logradouro;
@@ -51,5 +52,10 @@ public class Endereco {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-	
+	public Pais getPais() {
+		return pais;
+	}
+	public void setPais(Pais pais) {
+		this.pais = pais;
+	}
 }

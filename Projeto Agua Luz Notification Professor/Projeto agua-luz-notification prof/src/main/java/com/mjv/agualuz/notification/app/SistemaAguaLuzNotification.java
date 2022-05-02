@@ -45,7 +45,7 @@ public class SistemaAguaLuzNotification {
 		
 		// FEITO A PARTE ACIMA, APÓS CRIAR A CLASSE "GERADOR MENSAGEM"
 		GeradorMensagem gm = new GeradorMensagem();
-		//gm.gerar(contrato);
-		System.out.println("Aqui, doido!");
+		gm.gerar(contrato);
+		//System.out.println("Aqui, doido!");
 	}
 }

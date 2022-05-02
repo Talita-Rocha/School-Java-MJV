@@ -8,6 +8,8 @@ public class Contrato {
 	private Double valor;
 	private LocalDateTime dataHora;
 	private Cadastro cliente;
+	private TipoNotificacao notificacao;
+	
 	public Long getNumeroProtocolo() {
 		return numeroProtocolo;
 	}
@@ -37,5 +39,10 @@ public class Contrato {
 	public void setCliente(Cadastro cliente) {
 		this.cliente = cliente;
 	}
-	
+	public TipoNotificacao getNotificacao() {
+		return notificacao;
+	}
+	public void setNotificacao(TipoNotificacao notificacao) {
+		this.notificacao = notificacao;
+	}
 }
