@@ -1,55 +1,41 @@
 package javaexplorer.sintaxe.operadores;
 
 public class OperadoresExplorer {
-
 	public static void main(String[] args) {
-		exemploOperadorUnario1();
-		
-		exemploOperadorUnario2();
-
-		exemploOperadorUnarioProf();
+		//exemploOperadorUnario();
+		exemploOperadorLogico();
 	}
-	
-	static void exemploOperadorUnario1 () {
+	static void exemploOperadorLogico() {
+		int numero1=5;
+		int numero2=3;
+		
+		if(numero1 > 5 && numero2<5) {
+			System.out.println("as duas condições são verdadeiras");
+		}
+		if(numero1 > 5 || numero2<5) {
+			System.out.println("uma das condições é verdadeira");
+		}
+		System.out.println("finalizar");
+	}
+	static void exemploOperadorUnario() {
 		int numero = 10;
 		
 		numero = -numero;
-		
-		System.out.println("Exemplo Operador Unario1 : " + numero +"\n");
-	}
+		//System.out.println(numero);
 	
-	static void exemploOperadorUnario2 () {
-		int valor1 = 5;
-		int valor2 = 5;
-		int valor3 = 5;
-		int valor4 = 5;
+		numero = -numero;
+		//System.out.println(numero);
 		
-		valor1 = valor1 +1; //1º ex
-		valor2++;           //2º ex
-		++valor3;           //3º ex.
-		--valor4;	        //4º ex
+		int valor = 5;
 		
-		System.out.println("Exemplo Operador Unario 2:  " + valor1 + "  Incrementado"+"\n"); 
-		System.out.println("Exemplo Operador Unario 2:  " + valor2 + "  Pós-Incrementado"+"\n");
-		System.out.println("Exemplo Operador Unario 2:  " + (++valor3) + "  Pré-Incrementado"+"\n");
-		System.out.println("Exemplo Operador Unario 2:  " + (--valor4) + "  Pré-Decrementado"+"\n");
-	}
-	
-	static void exemploOperadorUnarioProf () {
-		int valorprof = 5;
-		
-		//valor = valor+1;
+		//valor = valor +1;
 		//valor++;
-				
-		//System.out.println("Exemplo Operador Unario Prof : " + valorprof + "\n");
-		//System.out.println("Exemplo Operador Unario Prof : " + valorprof + "\n");
-		System.out.println("Exemplo Operador Unario Prof:  " + (++valorprof) + "  Pré-Incrementado"+"\n");
-		System.out.println("Exemplo Operador Unario Prof:  " + (--valorprof) + "  Pré-Decrementado"+"\n");
-		System.out.println("Exemplo Operador Unario Prof:  " + (valorprof++) + "  Pós-Incrementado"+"\n");
-		System.out.println("Exemplo Operador Unario Prof:  " + (valorprof--) + "  Pós-Decrementado"+"\n");
+		System.out.println(++valor);//pre / pos incremento
+		System.out.println(--valor);
 		
-		boolean verdadeira = true;
+		boolean verdadeira = false;
 		
 		System.out.println(!verdadeira);
+	
 	}
 }
