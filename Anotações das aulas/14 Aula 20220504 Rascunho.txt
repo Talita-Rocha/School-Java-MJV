@@ -1,0 +1,26 @@
+Continou a falar sobre Colletions
+
+Colletions.sort 
+é um classe utilitária para colocar a lista em ordem
+
+Set <String> inscritos = new Hash set <String>();
+para não haver duplicação.
+
+Queue <String> alunos = new LinkedList <String>();
+Queue e metodo pool - remove da lista 
+
+PESQUISAR SOBRE PRIORITY 
+para criar prioridades na minha lista
+
+Victor Henrique
+public class PriorityQueueDemo {
+    public static void main(String args[])
+    {
+        PriorityQueue<String> pq = new PriorityQueue<>();
+
+        pq.add("Welcome");
+        pq.add("To");
+        pq.add("Party");
+        System.out.println(pq);
+    }
+}
