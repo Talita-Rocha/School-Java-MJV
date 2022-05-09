@@ -32,7 +32,7 @@ Repositório dedicado às aulas práticas do curso School Java da [MJV](https://
 
 # Quarta semana
 ## Aula	Conteúdo
-**Seg:**	Revisão de conteúdos da Schools, tema livre, alinhamento geral de aprendizado. Exemplos, cases e testes práticos
-**Ter:**	Noções de HTTP e API Rest e instrodução ao Spring Web
-**Qua:**	Criando o webservice com recursos Rest com Spring Web.
+**Seg:**	Revisão de conteúdos da Schools, tema livre, alinhamento geral de aprendizado. Exemplos, cases e testes práticos;</br>
+**Ter:**	Noções de HTTP e API Rest e instrodução ao Spring Web;</br>
+**Qua:**	Criando o webservice com recursos Rest com Spring Web;</br>
 **Qui:**	Swagger, Segurança com JWT e Deploy no Heroku.
