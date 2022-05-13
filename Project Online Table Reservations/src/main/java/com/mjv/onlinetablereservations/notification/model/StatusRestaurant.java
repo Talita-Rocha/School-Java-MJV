@@ -1,5 +1,8 @@
 package com.mjv.onlinetablereservations.notification.model;
 
-public class StatusRestaurant {
+public enum StatusRestaurant {
+	
+	RESERVADO,
+	DISPONÍVEL,
 
 }

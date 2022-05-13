@@ -2,9 +2,9 @@ package com.mjv.onlinetablereservations.notification.model;
 
 public enum UnitRestaurant {
 
-	Botafogo_Rio,
-	Norte_Shopping;
-	
+	BOTAFOGO_RIO,
+	NORTE_SHOPPING,
+		
 }
 
 // Norte_Shopping: Av. Dom Hélder Câmara, 5474, Cachambi. CEP: 20.771-004, NorteShopping, Salas 5102A e 5102B.
