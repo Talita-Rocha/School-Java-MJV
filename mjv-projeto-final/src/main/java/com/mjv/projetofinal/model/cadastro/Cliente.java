@@ -36,7 +36,6 @@ public class Cliente {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-	
 	public Integer getId() {
 		return id;
 	}
