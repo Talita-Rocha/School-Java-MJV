@@ -14,8 +14,10 @@ import com.mjv.pedidofast.service.PedidoService;
 
 public class PedidoFastApp {
 	public static void main(String[] args) {
+		
 		ClienteFakeRepository clienteRepository = new ClienteFakeRepository();
 		Cliente cliente = clienteRepository.buscarPorId(2);
+		
 		Pedido pedido1 = new Pedido();
 		pedido1.setCliente(cliente);
 		pedido1.setId(100212);
@@ -23,8 +25,8 @@ public class PedidoFastApp {
 		pedido1.setValorTotal(0.0);// vai mudar na hora da conclusao
 		
 		ProdutoFakeRepository produtoRepository = new ProdutoFakeRepository();
-		
 		Produto produtoSelecionado = produtoRepository.buscarPorId(1);
+		
 		System.out.println("Produto Selecionado foi "+ produtoSelecionado.getDescricao());
 		List<PedidoItem> itens = new ArrayList();
 		//parece loucura
