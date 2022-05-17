@@ -23,6 +23,7 @@ public class Cliente {
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private Endereco endereco;
+	
 	public Endereco getEndereco() {
 		return endereco;
 	}
