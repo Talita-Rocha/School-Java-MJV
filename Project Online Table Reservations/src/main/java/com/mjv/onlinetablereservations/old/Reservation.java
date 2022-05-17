@@ -1,4 +1,4 @@
-package com.mjv.onlinetablereservations.notification.service;
+package com.mjv.onlinetablereservations.old;
 
 import java.util.ArrayList;
 import java.util.List;

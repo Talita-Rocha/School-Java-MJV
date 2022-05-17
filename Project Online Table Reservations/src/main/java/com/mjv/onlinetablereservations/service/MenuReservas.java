@@ -1,4 +1,4 @@
-package com.mjv.onlinetablereservations.notification.service;
+package com.mjv.onlinetablereservations.service;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class MenuReservas {
 public static void menuReservas() {
     Scanner sc = new Scanner(System.in);
         
-    Menu menu = new Menu ();
+   // MenuReservas menu = new MenuReservas ();
     
     int opcao = 0;
     
@@ -28,6 +28,9 @@ public static void menuReservas() {
       System.out.print("Digite aqui sua opção de reserva: ");
           opcao = Integer.parseInt(sc.nextLine());
      
+      //ver forma de limpar o console
+      // ir para a proxima opção
+      //corrigir identação
       //TRATAR A OPÇÃO 4
 
       if(opcao == 1) {
@@ -51,12 +54,12 @@ public static void menuReservas() {
       		}
       			else if(opcao == 4){
       			//Cria um novo objeto
-      			ReservarMesa reservamesaId = new ReservarMesa ();
+      			//ReservarMesa reservamesaId = new ReservarMesa ();
       			
       			System.out.println("Ótima escolha!");
-      			sc.nextLine();
+      			//sc.nextLine();
+      			//reservamesaId.nextLine();
       			}
-        
     }
     
     while (opcao != 0);

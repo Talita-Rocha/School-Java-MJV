@@ -1,4 +1,4 @@
-package com.mjv.onlinetablereservations.notification.service;
+package com.mjv.onlinetablereservations.old;
 
 import java.time.LocalTime;
 import java.util.Scanner;
