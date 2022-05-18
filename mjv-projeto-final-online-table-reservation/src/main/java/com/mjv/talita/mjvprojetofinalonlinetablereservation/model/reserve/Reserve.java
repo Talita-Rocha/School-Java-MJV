@@ -51,9 +51,7 @@ public class Reserve {
 	@Column(name = "note")
 	private TextArea note;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "customer_id")
-	
+		
 	public Integer getIdReserve() {
 		return idReserve;
 	}

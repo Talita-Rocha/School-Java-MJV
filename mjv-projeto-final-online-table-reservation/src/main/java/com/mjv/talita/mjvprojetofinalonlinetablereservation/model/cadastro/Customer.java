@@ -19,7 +19,7 @@ public class Customer {
 	private String phone;
 	private String email;
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	//@OneToOne(cascade = CascadeType.ALL)
 		
 	public Integer getId() {
 		return id;
