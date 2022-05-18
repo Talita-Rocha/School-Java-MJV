@@ -1,11 +1,9 @@
 package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
 
-import java.awt.TextArea;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Objects;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -13,8 +11,6 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -49,7 +45,7 @@ public class Reserve {
 	private NotificationType notification;
 	
 	@Column(name = "note")
-	private TextArea note;
+	private String note;
 
 		
 	public Integer getIdReserve() {
@@ -124,11 +120,11 @@ public class Reserve {
 		this.notification = notification;
 	}
 
-	public TextArea getNote() {
+	public String getNote() {
 		return note;
 	}
 
-	public void setNote(TextArea note) {
+	public void setNote(String note) {
 		this.note = note;
 	}
 

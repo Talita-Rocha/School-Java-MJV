@@ -6,4 +6,6 @@ import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve.Reserv
 
 public interface ReserveRepository extends JpaRepository<Reserve, Integer> {
 
+	
+
 }

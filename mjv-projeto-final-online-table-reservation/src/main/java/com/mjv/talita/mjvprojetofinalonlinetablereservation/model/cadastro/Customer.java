@@ -1,26 +1,21 @@
 package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.cadastro;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "customer")
+@Entity //Torna a classe um entidade conectada a uma tabela no banco de dados
+@Table(name = "customer") //Necessário quando o nome da entidade difere do nome da tabela
 public class Customer {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id //Determina que o atributo representa a chave primária no banco de dados
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //Determina a geração da chave primária
 	private Integer id;
 	private String name;
 	private String phone;
 	private String email;
 	
-	//@OneToOne(cascade = CascadeType.ALL)
-		
 	public Integer getId() {
 		return id;
 	}
