@@ -3,90 +3,152 @@ package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
 import java.awt.TextArea;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Objects;
 
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.NotificationType;
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.UnitRestaurant;
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.cadastro.Customer;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "reserve")
 public class Reserve {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer idReserve;
 
-	private int Idreservation;
-	private UnitRestaurant unit;
+	@Column(name = "data")
 	private LocalDate data;
+	
+	@Column(name = "hora")
 	private LocalTime hora;
+	
+	@Column(name = "customer_id")
+	private Integer customerId;    //PARA RETORNAR APENAS O ID.
+	
+	@Enumerated(EnumType.STRING)
+	private UnitRestaurant unit;
+	
+	@Enumerated(EnumType.STRING)
 	private Hall hall;
+	
+	@Enumerated(EnumType.STRING)
 	private NumberPeople numberPeople;
-	private TextArea note;
-	private StatusReservation status;
-	private Customer customer;
+	
+	@Enumerated(EnumType.STRING)
+	private ReserveStatus status;
+	
+	@Enumerated(EnumType.STRING)
 	private NotificationType notification;
 	
-	public int getIdreservation() {
-		return Idreservation;
+	@Column(name = "note")
+	private TextArea note;
+
+	@OneToMany(cascade = CascadeType.ALL)
+	@JoinColumn(name = "customer_id")
+	
+	public Integer getIdReserve() {
+		return idReserve;
 	}
-	public void setIdreservation(int idreservation) {
-		Idreservation = idreservation;
+
+	public void setIdReserve(Integer idReserve) {
+		this.idReserve = idReserve;
 	}
-	public UnitRestaurant getUnit() {
-		return unit;
-	}
-	public void setUnit(UnitRestaurant unit) {
-		this.unit = unit;
-	}
+
 	public LocalDate getData() {
 		return data;
 	}
+
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
+
 	public LocalTime getHora() {
 		return hora;
 	}
+
 	public void setHora(LocalTime hora) {
 		this.hora = hora;
 	}
+
+	public Integer getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(Integer customerId) {
+		this.customerId = customerId;
+	}
+
+	public UnitRestaurant getUnit() {
+		return unit;
+	}
+
+	public void setUnit(UnitRestaurant unit) {
+		this.unit = unit;
+	}
+
 	public Hall getHall() {
 		return hall;
 	}
+
 	public void setHall(Hall hall) {
 		this.hall = hall;
 	}
+
 	public NumberPeople getNumberPeople() {
 		return numberPeople;
 	}
+
 	public void setNumberPeople(NumberPeople numberPeople) {
 		this.numberPeople = numberPeople;
 	}
-	public TextArea getNote() {
-		return note;
-	}
-	public void setNote(TextArea note) {
-		this.note = note;
-	}
-	public StatusReservation getStatus() {
+
+	public ReserveStatus getStatus() {
 		return status;
 	}
-	public void setStatus(StatusReservation status) {
+
+	public void setStatus(ReserveStatus status) {
 		this.status = status;
 	}
-	public Customer getCustomer() {
-		return customer;
-	}
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
-	}
+
 	public NotificationType getNotification() {
 		return notification;
 	}
+
 	public void setNotification(NotificationType notification) {
 		this.notification = notification;
 	}
-	
-	@Override
-	public String toString() {
-		return "Reserve [Idreservation=" + Idreservation + ", unit=" + unit + ", data=" + data + ", hora=" + hora
-				+ ", hall=" + hall + ", numberPeople=" + numberPeople + ", note=" + note + ", status=" + status
-				+ ", customer=" + customer + ", notification=" + notification + "]";
+
+	public TextArea getNote() {
+		return note;
 	}
-	
+
+	public void setNote(TextArea note) {
+		this.note = note;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(idReserve);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Reserve other = (Reserve) obj;
+		return Objects.equals(idReserve, other.idReserve);
+	}
+
 }

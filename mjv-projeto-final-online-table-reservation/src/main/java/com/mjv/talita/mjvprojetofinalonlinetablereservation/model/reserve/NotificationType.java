@@ -1,7 +1,6 @@
 package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
 
-public enum Hall {
-	INTERNO,
-	VARANDA;
-
+public enum NotificationType {
+	EMAIL,
+	SMS;
 }
