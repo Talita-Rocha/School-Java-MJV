@@ -19,7 +19,7 @@ sac.restaurante@restaurante.com
 
 [Faça a sua reseva aqui](https://cocobambu.com/unidades/botafogo-rio/).
 
-#######Reservas on line
+######Reservas on line
 
 Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.
 
