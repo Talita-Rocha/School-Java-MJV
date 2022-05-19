@@ -19,14 +19,14 @@ sac.restaurante@restaurante.com
 
 [Faça a sua reseva aqui](https://cocobambu.com/unidades/botafogo-rio/).
 
-######Reservas on line
+##Reservas on line
 
-Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.
+*Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.*
 
-1. Selecionar a data desejada:
+1. **Selecionar a data desejada:**
    "DD/MM/AAAA"
 
-2. Selecionar o horário:
+2. **Selecionar o horário:**
 * 11:30
 * 12:00
 * 12:30
@@ -36,11 +36,11 @@ Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.
 * 20:00
 * 20:30
 
-3. Selecionar o salão;
+3. **Selecionar o salão**
 * Salão interno
 * Varanda
 
-4. Selecionar a quantidade de pessoas;
+4. **Selecionar a quantidade de pessoas**
 * 2 pessoas
 * 3 pessoas
 * 4 pessoas
@@ -50,8 +50,9 @@ Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.
 * 8 pessoas
 * Reservas para grupos
 
-5. Reservas para grupos;
-6. Selecionar a quantidade de pessoas, em grupo;
+5. **Reservas para grupos**  
+
+**Selecionar a quantidade de pessoas, em grupo.**
 * 20 pessoas
 * 21 pessoas
 * 22 pessoas
@@ -60,33 +61,33 @@ Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.
 * 25 pessoas
 * 30 pessoas
 
-7. Texto livre no campo abaixo para “ocasiões especiais, restrições, dúvidas”;
+6. **Campo com texto livre abaixo para _“ocasiões especiais, restrições, dúvidas”;_**
 
-8. Clicar em "prosseguir"
+8. Clicar em "**prosseguir**"
 
-9. Seus dados de contato
+9. **Seus dados de contato**
 
 * Informar seu nome completo;
 * Informar seu telefone;
 * Informar seu e-mail
 
-10. Clicar em "prosseguir"
+10. Clicar em "**prosseguir**"
 
-Enviar confirmação por e-mail.
+_Enviar confirmação por e-mail._
 
 Título: Nome do restaurante - Sua reserva está aguardando aprovação
-/*
-\t Olá, "Customer [name=" + name + "]"  
+
+Olá, Talita  
  
+Sua reserva para grupo está em análise para aprovação.
+Você receberá um novo e-mail com a resposta da sua reserva.
 
-"Sua reserva para grupo está em análise para aprovação./n"
-"Você receberá um novo e-mail com a resposta da sua reserva./n"
+Sexta-feira, 3 de dezembro de 2021
+para 20 pessoas às" 20:00
 
-Formato da data Sexta-feira, 3 de dezembro de 2021
-"para 20 pessoas às" hora=" + hora + " //20:00
-*/
-
-11. Link “cancelar reserva” direciona para o site na página de reserva.
+[Cancelar reserva](https://waitlist.tagme.com.br/mobileReservation/619fa98aef902f00420a3665)
+ 
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ##### Apresentação
 
