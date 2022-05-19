@@ -1,4 +1,4 @@
-package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.cadastro;
+package old;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

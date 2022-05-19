@@ -1,4 +1,4 @@
-package com.mjv.talita.mjvprojetofinalonlinetablereservation.service;
+package old;
 
 public class ReserveNotification {
 

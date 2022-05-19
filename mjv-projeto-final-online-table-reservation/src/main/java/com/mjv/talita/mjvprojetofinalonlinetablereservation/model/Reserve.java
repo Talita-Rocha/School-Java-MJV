@@ -1,8 +1,7 @@
-package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
+package com.mjv.talita.mjvprojetofinalonlinetablereservation.model;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Table(name = "reserve")
 public class Reserve {
@@ -20,14 +21,13 @@ public class Reserve {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idReserve;
 
+	//@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd")
 	@Column(name = "data")
 	private LocalDate data;
 	
 	@Column(name = "hora")
+	//@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="HH:mm")
 	private LocalTime hora;
-	
-	@Column(name = "customer_id")
-	private Integer customerId;    //PARA RETORNAR APENAS O ID.
 	
 	@Enumerated(EnumType.STRING)
 	private UnitRestaurant unit;
@@ -47,7 +47,15 @@ public class Reserve {
 	@Column(name = "note")
 	private String note;
 
-		
+	@Column(name = "name")
+	private String name;
+	
+	@Column(name = "phone")
+	private String phone;
+	
+	@Column(name = "email")
+	private String email;
+	
 	public Integer getIdReserve() {
 		return idReserve;
 	}
@@ -70,14 +78,6 @@ public class Reserve {
 
 	public void setHora(LocalTime hora) {
 		this.hora = hora;
-	}
-
-	public Integer getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(Integer customerId) {
-		this.customerId = customerId;
 	}
 
 	public UnitRestaurant getUnit() {
@@ -128,21 +128,28 @@ public class Reserve {
 		this.note = note;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(idReserve);
+	public String getName() {
+		return name;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Reserve other = (Reserve) obj;
-		return Objects.equals(idReserve, other.idReserve);
+	public void setName(String name) {
+		this.name = name;
 	}
 
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+		
 }
