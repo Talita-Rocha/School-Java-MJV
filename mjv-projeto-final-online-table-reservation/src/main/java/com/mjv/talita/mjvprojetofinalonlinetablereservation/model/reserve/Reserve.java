@@ -1,7 +1,6 @@
 package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -20,14 +19,8 @@ public class Reserve {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idReserve;
 
-	@Column(name = "data")
-	private LocalDate data;
-	
-	@Column(name = "hora")
-	private LocalTime hora;
-	
-	@Column(name = "customer_id")
-	private Integer customerId;    //PARA RETORNAR APENAS O ID.
+	@Column(name = "dataHora")
+	private LocalDateTime dataHora;
 	
 	@Enumerated(EnumType.STRING)
 	private UnitRestaurant unit;
@@ -47,6 +40,14 @@ public class Reserve {
 	@Column(name = "note")
 	private String note;
 
+	@Column(name = "name")
+	private String name;
+	
+	@Column(name = "phone")
+	private String phone;
+	
+	@Column(name = "email")
+	private String email;
 		
 	public Integer getIdReserve() {
 		return idReserve;
@@ -56,28 +57,11 @@ public class Reserve {
 		this.idReserve = idReserve;
 	}
 
-	public LocalDate getData() {
-		return data;
+	public LocalDateTime getDataHora() {
+		return dataHora;
 	}
-
-	public void setData(LocalDate data) {
-		this.data = data;
-	}
-
-	public LocalTime getHora() {
-		return hora;
-	}
-
-	public void setHora(LocalTime hora) {
-		this.hora = hora;
-	}
-
-	public Integer getCustomerId() {
-		return customerId;
-	}
-
-	public void setCustomerId(Integer customerId) {
-		this.customerId = customerId;
+	public void setDataHora(LocalDateTime dataHora) {
+		this.dataHora = dataHora;
 	}
 
 	public UnitRestaurant getUnit() {
@@ -126,6 +110,30 @@ public class Reserve {
 
 	public void setNote(String note) {
 		this.note = note;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override

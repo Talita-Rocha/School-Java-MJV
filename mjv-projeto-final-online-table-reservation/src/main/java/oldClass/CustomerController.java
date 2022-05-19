@@ -1,4 +1,4 @@
-package com.mjv.talita.mjvprojetofinalonlinetablereservation.controller;
+package oldClass;
 
 import java.util.List;
 
@@ -12,31 +12,30 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.cadastro.Customer;
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.repository.CustomerRepository;
+import oldClass.cadastro.Customer;
 
 @RestController 
 @RequestMapping("/customers") 
 
 public class CustomerController {
 	@Autowired 
-	private CustomerRepository repository;
+	//private CustomerRepository repository;
 	
 	@PostMapping 
 	public void gravar(@RequestBody Customer customer) {
-		repository.save(customer);
+		//repository.save(customer);
 	}
 	@GetMapping 
-	public List<Customer> listar() {
-		return repository.findAll();
-	}
+	//public List<Customer> listar() {
+		//return repository.findAll();
+	//}
 	@PutMapping 
 	public void alterar(@RequestBody Customer customer) {
-		repository.save(customer);
+		//repository.save(customer);
 	}
 	@DeleteMapping ("/{id}") 
 	public void excluir(@PathVariable ("id") Integer id) {
-		repository.deleteById(id);
+		//repository.deleteById(id);
 	} 
 }
 
