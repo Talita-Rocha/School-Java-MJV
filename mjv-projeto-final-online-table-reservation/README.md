@@ -15,9 +15,9 @@ Repositório contendo o código fonte de projeto "On line table reservation".
 * Swagger
 
 ##### O melhor restaurante do Brasil chegou ao Rio de Janeiro
-sac.botafogo@cocobambu.com
+sac.restaurante@restaurante.com
 
-Clicar em "Reserve uma mesa"
+[Faça a sua reseva aqui](https://cocobambu.com/unidades/botafogo-rio/).
 
 #######Reservas on line
 
