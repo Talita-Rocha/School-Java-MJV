@@ -1,6 +1,6 @@
 # MJV Projeto Final
 
-#### Autor
+#### Autora
 
 - [Talita Rocha](https://github.com/Talita-Rocha)
 
@@ -19,11 +19,11 @@ sac.restaurante@restaurante.com
 
 [Faça a sua reseva aqui](https://cocobambu.com/unidades/botafogo-rio/).
 
-##Reservas on line
+#####Reservas on line
 
 *Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.*
 
-1. **Selecionar a data desejada:**
+1. **Selecionar a data desejada:**  
    "DD/MM/AAAA"
 
 2. **Selecionar o horário:**
@@ -51,8 +51,7 @@ sac.restaurante@restaurante.com
 * Reservas para grupos
 
 5. **Reservas para grupos**  
-
-**Selecionar a quantidade de pessoas, em grupo.**
+  **Selecionar a quantidade de pessoas, em grupo.**
 * 20 pessoas
 * 21 pessoas
 * 22 pessoas
@@ -63,7 +62,7 @@ sac.restaurante@restaurante.com
 
 6. **Campo com texto livre abaixo para _“ocasiões especiais, restrições, dúvidas”;_**
 
-8. Clicar em "**prosseguir**"
+8. Clicar em "**Prosseguir**"
 
 9. **Seus dados de contato**
 
@@ -71,7 +70,7 @@ sac.restaurante@restaurante.com
 * Informar seu telefone;
 * Informar seu e-mail
 
-10. Clicar em "**prosseguir**"
+10. Clicar em "**Prosseguir**"
 
 _Enviar confirmação por e-mail._
 
@@ -90,7 +89,6 @@ para 20 pessoas às" 20:00
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ##### Apresentação
-
 
 1. Salvar reserva
 2. Pesquisar reserva
