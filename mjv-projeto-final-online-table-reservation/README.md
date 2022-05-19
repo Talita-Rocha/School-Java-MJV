@@ -28,22 +28,7 @@ Repositório contendo o código fonte de projeto "On line table reservation".
 
 ```
 {
-  "idReserve": 1,
-  "data": "2022-05-19",
-  "hora": {
-    "hour": 18,
-    "minute": 00,
   
-  },
-  "unit": "BOTAFOGO_RIO",
-  "hall": "INTERNO",
-  "numberPeople": "DUAS",
-  "status": "EM_ANÁLISE",
-  "notification": "EMAIL",
-  "note": "reserva pra comemoração de aniversário de namoro. ",
-  "name": "Talita Rocha",
-  "phone": "21 97321-6606",
-  "email": "rochatalita86@gmail.com"
 }
 ```
 

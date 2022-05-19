@@ -1,7 +1,8 @@
-package com.mjv.talita.mjvprojetofinalonlinetablereservation.model;
+package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
 
 public enum UnitRestaurant {
 
+	//VER ONDE ENCAIXAR
 	BOTAFOGO_RIO,
 	NORTE_SHOPPING,
 		

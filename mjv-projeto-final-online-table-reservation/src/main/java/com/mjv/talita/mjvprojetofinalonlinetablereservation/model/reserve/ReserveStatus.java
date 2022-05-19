@@ -1,4 +1,4 @@
-package com.mjv.talita.mjvprojetofinalonlinetablereservation.model;
+package com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve;
 
 public enum ReserveStatus {
 		

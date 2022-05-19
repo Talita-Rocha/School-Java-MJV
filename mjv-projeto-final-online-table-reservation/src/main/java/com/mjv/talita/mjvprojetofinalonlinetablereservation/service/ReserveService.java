@@ -1,4 +1,4 @@
-package old;
+package com.mjv.talita.mjvprojetofinalonlinetablereservation.service;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -6,8 +6,8 @@ import java.time.LocalTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.Reserve;
-import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.ReserveStatus;
+import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve.Reserve;
+import com.mjv.talita.mjvprojetofinalonlinetablereservation.model.reserve.ReserveStatus;
 import com.mjv.talita.mjvprojetofinalonlinetablereservation.repository.ReserveRepository;
 
 //DEVE CONSTAR AS REGRAS DO NEGÓCIO
