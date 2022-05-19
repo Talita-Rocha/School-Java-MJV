@@ -19,7 +19,7 @@ sac.restaurante@restaurante.com
 
 [Faça a sua reseva aqui](https://cocobambu.com/unidades/botafogo-rio/).
 
-#####Reservas on line
+## Reservas on line
 
 *Antecedência mínima de 2 horas para reservas, sujeito à disponibilidade.*
 
@@ -51,7 +51,7 @@ sac.restaurante@restaurante.com
 * Reservas para grupos
 
 5. **Reservas para grupos**  
-  **Selecionar a quantidade de pessoas, em grupo.**
+  *Selecionar a quantidade de pessoas, em grupo.*
 * 20 pessoas
 * 21 pessoas
 * 22 pessoas
@@ -60,7 +60,7 @@ sac.restaurante@restaurante.com
 * 25 pessoas
 * 30 pessoas
 
-6. **Campo com texto livre abaixo para _“ocasiões especiais, restrições, dúvidas”;_**
+6. **Campo com texto livre _“ocasiões especiais, restrições, dúvidas”;_**
 
 8. Clicar em "**Prosseguir**"
 
@@ -82,13 +82,13 @@ Sua reserva para grupo está em análise para aprovação.
 Você receberá um novo e-mail com a resposta da sua reserva.
 
 Sexta-feira, 3 de dezembro de 2021
-para 20 pessoas às" 20:00
+para 20 pessoas às 20:00
 
 [Cancelar reserva](https://waitlist.tagme.com.br/mobileReservation/619fa98aef902f00420a3665)
  
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-##### Apresentação
+## Apresentação
 
 1. Salvar reserva
 2. Pesquisar reserva
